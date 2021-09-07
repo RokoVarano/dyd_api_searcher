@@ -4,14 +4,15 @@ import {
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import capFirst from '../../utilities';
+import Details from '../Details/Details';
 
 const List = (props) => {
-  const { url, path } = useRouteMatch();
+  const { path } = useRouteMatch();
   const { categories } = props;
 
   const categoriesJSX = (categories) => categories.map((category) => {
     const name = category.key ? category.key : category.index;
-    const address = category.key ? category.key : `${url}/${category.index}`;
+    const address = category.key ? category.key : `${path}/${category.index}`;
     const count = category.category ? <p>{`${category.category.count} items`}</p> : null;
 
     return (
@@ -22,7 +23,9 @@ const List = (props) => {
             { count }
           </Link>
         </Route>
-        <Route path={`${path}/${category.index}`}>{category.url}</Route>
+        <Route path={`${path}/${category.index}`}>
+          <Details url={category.url} />
+        </Route>
       </Switch>
 
     );
