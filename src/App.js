@@ -1,19 +1,20 @@
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-// import { useEffect } from 'react';
-// import { useDispatch } from 'react-redux';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getCategories } from './redux/categories';
+import List from './components/List/List';
 
 function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(fetchRockets());
-  // }, []);
+  useEffect(() => {
+    dispatch(getCategories());
+  }, []);
 
   return (
     <Router>
-      {/* <Header /> */}
       <Switch>
-        {/* <Route path="/" exact component={Home} /> */}
+        <Route path="/" exact component={List} />
       </Switch>
     </Router>
   );
