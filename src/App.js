@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getCategories } from './redux/categories';
 import List from './components/List/List';
+import Header from './components/Header/Header';
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <Router>
+      <Header />
       <Switch>
         <Route
           path="/"

@@ -25,7 +25,7 @@ const List = (props) => {
             </Link>
           </Route>
           <Route path={`${path}/${category.index}`}>
-            <Details url={category.url} />
+            <Details apiUrl={category.url} homeUrl={path} />
           </Route>
         </Switch>
       </li>

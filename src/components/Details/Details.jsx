@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { getDetails } from '../../redux/details';
 import capFirst from '../../utilities';
 
 const Details = (props) => {
-  const { url } = props;
+  const { apiUrl, homeUrl } = props;
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getDetails(url));
+    dispatch(getDetails(apiUrl));
   }, []);
 
   const details = useSelector((state) => state.details);
@@ -41,14 +42,20 @@ const Details = (props) => {
   });
 
   return (
-    <div className="details">
-      {populate(details)}
-    </div>
+    <>
+      <div className="details">
+        <Link to={homeUrl} className="header"><h3>{'<'}</h3></Link>
+        <div className="details-list">
+          {populate(details)}
+        </div>
+      </div>
+    </>
   );
 };
 
 Details.propTypes = {
-  url: PropTypes.string.isRequired,
+  apiUrl: PropTypes.string.isRequired,
+  homeUrl: PropTypes.string.isRequired,
 };
 
 export default Details;
