@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 
 $p-font: 'Lato', sans-serif;
 $h-font: 'Roboto', sans-serif;
@@ -31,7 +32,8 @@ body,
   position: absolute;
   overflow-y: auto;
   height: 100%;
-  background-color: $color-black;
+  background: url('./assets/pictures/bg.png');
+  background-size: cover;
 
   * {
     display: flex;
@@ -40,6 +42,17 @@ body,
   a {
     text-decoration: none;
     color: $color-white;
+  }
+
+  h1,
+  h3 {
+    font-family: $h-font;
+    flex-direction: row;
+  }
+
+  i {
+    width: auto;
+    padding-right: 1rem;
   }
 }
 
