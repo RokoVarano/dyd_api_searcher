@@ -1,0 +1,23 @@
+.list {
+  li {
+    padding: 0.2rem 0.5rem;
+
+    a {
+      flex-direction: row;
+      justify-content: space-between;
+
+      p {
+        width: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  li:nth-child(even) {
+    background-color: $color-magenta;
+  }
+
+  li:nth-child(odd) {
+    background-color: $color-magenta-dark;
+  }
+}

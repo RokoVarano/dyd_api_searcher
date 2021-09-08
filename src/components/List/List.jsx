@@ -16,18 +16,19 @@ const List = (props) => {
     const count = category.category ? <p>{`${category.category.count} items`}</p> : null;
 
     return (
-      <Switch key={name}>
-        <Route exact path={path}>
-          <Link to={`${address}`} key={name}>
-            <h3>{capFirst(name)}</h3>
-            { count }
-          </Link>
-        </Route>
-        <Route path={`${path}/${category.index}`}>
-          <Details url={category.url} />
-        </Route>
-      </Switch>
-
+      <li key={name} className="list-item">
+        <Switch>
+          <Route exact path={path}>
+            <Link to={`${address}`} key={name}>
+              <h3>{capFirst(name)}</h3>
+              { count }
+            </Link>
+          </Route>
+          <Route path={`${path}/${category.index}`}>
+            <Details url={category.url} />
+          </Route>
+        </Switch>
+      </li>
     );
   });
 

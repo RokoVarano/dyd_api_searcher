@@ -17,14 +17,26 @@ function App() {
     <Route
       path={`/${item.key}`}
       key={item.key}
-      render={() => <List categories={item.category.results} />}
+      render={() => (
+        <ul className="list">
+          <List categories={item.category.results} />
+        </ul>
+      )}
     />
   ));
 
   return (
     <Router>
       <Switch>
-        <Route path="/" exact render={() => <List categories={mainList} />} />
+        <Route
+          path="/"
+          exact
+          render={() => (
+            <ul className="list">
+              <List categories={mainList} />
+            </ul>
+          )}
+        />
         {listRoutes(mainList)}
       </Switch>
     </Router>

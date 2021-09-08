@@ -21,9 +21,9 @@ const Details = (props) => {
   ));
 
   return (
-    <>
+    <div className="details">
       {populate(details)}
-    </>
+    </div>
   );
 };
 
