@@ -1,0 +1,13 @@
+.filter {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  input {
+    color: $color-black;
+  }
+
+  button {
+    width: auto;
+  }
+}

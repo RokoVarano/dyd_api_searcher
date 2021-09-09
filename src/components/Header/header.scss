@@ -1,4 +1,10 @@
 .header {
   background-color: $color-magenta;
   border-bottom: 1px $color-white solid;
+  flex-direction: row;
+
+  .back {
+    width: auto;
+    padding-right: 0.5rem;
+  }
 }
