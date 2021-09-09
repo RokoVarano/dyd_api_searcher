@@ -33,9 +33,9 @@ const List = (props) => {
   });
 
   return (
-    <>
+    <div className="list no-padding" data-testid="list">
       { categoriesJSX(categories) }
-    </>
+    </div>
   );
 };
 
