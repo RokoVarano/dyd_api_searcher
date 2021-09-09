@@ -1,6 +1,8 @@
 .list {
   padding: 0.5rem;
   overflow-y: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
 
   li {
     padding: 0.2rem 0.5rem;
@@ -12,6 +14,25 @@
       p {
         width: auto;
         white-space: nowrap;
+      }
+    }
+  }
+
+  .main-list {
+    width: 48vw;
+    height: 48vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    a {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      height: 100%;
+      width: 100%;
+
+      h3 {
+        width: auto;
       }
     }
   }

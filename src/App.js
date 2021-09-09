@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { getCategories } from './redux/categories';
 import List from './components/List/List';
 import Header from './components/Header/Header';
-import Filter from './components/Filter/Filter';
 
 function App() {
   const dispatch = useDispatch();
@@ -36,8 +35,7 @@ function App() {
           exact
           render={() => (
             <ul className="list">
-              <Filter />
-              <List categories={mainList} />
+              <List categories={mainList} mainList />
             </ul>
           )}
         />

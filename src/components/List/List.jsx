@@ -8,7 +8,7 @@ import Details from '../Details/Details';
 
 const List = (props) => {
   const { path } = useRouteMatch();
-  const { categories } = props;
+  const { categories, mainList } = props;
 
   const categoriesJSX = (categories) => categories.map((category) => {
     const name = category.key ? category.key : category.index;
@@ -16,7 +16,7 @@ const List = (props) => {
     const count = category.category ? <p>{`${category.category.count} items`}</p> : null;
 
     return (
-      <li key={name} className="list-item">
+      <li key={name} className={`list-item ${mainList ? 'main-list' : ''}`}>
         <Switch>
           <Route exact path={path}>
             <Link to={`${address}`} key={name}>
@@ -41,6 +41,11 @@ const List = (props) => {
 
 List.propTypes = {
   categories: PropTypes.arrayOf(PropTypes.object).isRequired,
+  mainList: PropTypes.bool,
+};
+
+List.defaultProps = {
+  mainList: false,
 };
 
 export default List;
