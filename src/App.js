@@ -35,6 +35,9 @@ function App() {
           exact
           render={() => (
             <ul className="list">
+              <li className="main-picture">
+                <h1 className="pink-cover"><i className="fab fa-d-and-d fa-4x" /></h1>
+              </li>
               <List categories={mainList} mainList />
             </ul>
           )}

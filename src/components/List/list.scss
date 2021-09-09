@@ -4,8 +4,28 @@
   flex-wrap: wrap;
   flex-direction: row;
 
+  .main-picture {
+    height: 48vw;
+    background-image: url('../../assets/pictures/Tiamat.jpg');
+    background-size: cover;
+    position: relative;
+
+    .pink-cover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-magenta;
+      opacity: 80%;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
   li {
     padding: 0.2rem 0.5rem;
+    background-color: $color-magenta;
 
     a {
       flex-direction: row;
@@ -19,10 +39,11 @@
   }
 
   .main-list {
-    width: 48vw;
+    width: 50%;
     height: 48vw;
     justify-content: flex-end;
     align-items: flex-end;
+    border: 2px $color-magenta-dark solid;
 
     a {
       flex-direction: column;
@@ -30,18 +51,19 @@
       justify-content: flex-end;
       height: 100%;
       width: 100%;
+      white-space: nowrap;
 
-      h3 {
+      h4 {
         width: auto;
       }
     }
   }
 
   li:nth-child(even) {
-    background-color: $color-magenta;
+    background-color: $color-magenta-dark;
   }
 
-  li:nth-child(odd) {
-    background-color: $color-magenta-dark;
+  .main-list:nth-child(n) {
+    background-color: $color-magenta;
   }
 }

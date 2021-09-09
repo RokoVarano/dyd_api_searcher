@@ -20,7 +20,7 @@ const List = (props) => {
         <Switch>
           <Route exact path={path}>
             <Link to={`${address}`} key={name}>
-              <h3>{capFirst(name)}</h3>
+              <h4>{capFirst(name)}</h4>
               { count }
             </Link>
           </Route>
