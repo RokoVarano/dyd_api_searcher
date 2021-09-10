@@ -3,6 +3,7 @@
 # D&D API Navigation Website
 
 This is the app corresponding to the Microverse React redux capstone. It is a navigation website to display information from the D&D5e API.
+The site is designed for mobile view.
 
 ## Screenshot
 
@@ -19,7 +20,7 @@ This is the app corresponding to the Microverse React redux capstone. It is a na
 
 ## Live Demo
 
-coming soon
+[Netlify](https://dndapiviewer.netlify.app/)
 
 ## Getting Started
 
@@ -40,6 +41,7 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - In the main page, use the input bar at the top and click on the grey eye button at the top right to filter your categories.
+Clear the input to get the full list.
 - Click on a category square to go into it's submenu.
 - In the submenu, click an item to get into the details.
 - To go to the previous page from anywhere, click on the '<' button at the top left, in the header.
