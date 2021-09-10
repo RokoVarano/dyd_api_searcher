@@ -7,7 +7,7 @@ import '@testing-library/jest-dom';
 import { createMemoryHistory } from 'history';
 import List from './List';
 import categories from '../../redux/categories';
-import main from '../../fakeDB/fakeDB';
+import mockGetCategories from '../../fakeDB/fakeDB';
 import capFirst from '../../utilities';
 
 afterEach(cleanup);
@@ -16,10 +16,6 @@ const renderWithRedux = (component,
   { initialState, store = createStore(categories, initialState) } = {}) => ({
   ...render(<Provider store={store}><Router history={createMemoryHistory()}><Route exact path="/" component={() => (component)} /></Router></Provider>),
 });
-
-const mockGetCategories = (filter) => Object.entries(main)
-  .filter((pair) => (filter ? pair[0].includes(filter) : true))
-  .map((pair) => ({ key: pair[0] }));
 
 it('renders with redux', () => {
   const { getByTestId } = renderWithRedux(<List mainList categories={[]} />);

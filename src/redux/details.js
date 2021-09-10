@@ -4,9 +4,10 @@ const GET_DETAILS = 'GET_DETAILS';
 
 const baseUrl = 'https://www.dnd5eapi.co';
 
-const getDetails = (url) => async (dispatch) => {
-  axios.get(`${baseUrl + ([...url][0] === '/' ? '' : '/') + url}`).then((res) => dispatch({ type: GET_DETAILS, data: res.data }));
-};
+const sendDetails = (data) => ({
+  type: GET_DETAILS,
+  data,
+});
 
 const details = (state = {}, action) => {
   switch (action.type) {
@@ -16,5 +17,9 @@ const details = (state = {}, action) => {
   }
 };
 
+const getDetails = (url) => async (dispatch) => {
+  axios.get(`${baseUrl + ([...url][0] === '/' ? '' : '/') + url}`).then((res) => dispatch(sendDetails(res.data)));
+};
+
 export default details;
-export { getDetails };
+export { getDetails, sendDetails };
