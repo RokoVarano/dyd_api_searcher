@@ -22,6 +22,9 @@ The site is designed for mobile view.
 
 [Netlify](https://dndapiviewer.netlify.app/)
 
+## Video Presentation
+[Loom](https://www.loom.com/share/77a26898680341bfa20b7b7610d42d8b)
+
 ## Getting Started
 
 **This is an example of how you may give instructions on setting up your project locally.**
