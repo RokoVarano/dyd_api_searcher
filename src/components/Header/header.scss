@@ -1,10 +1,24 @@
 .header {
-  background-color: $color-magenta;
+  background-color: $color-magenta-dark;
   border-bottom: 1px $color-white solid;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3rem;
 
   .back {
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      width: auto;
+    }
+  }
+
+  .header-icons {
     width: auto;
-    padding-right: 0.5rem;
+    flex-direction: row;
   }
 }

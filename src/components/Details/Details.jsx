@@ -44,7 +44,7 @@ const Details = (props) => {
   return (
     <>
       <div className="details">
-        <Link to={homeUrl} className="header"><h3>{'<'}</h3></Link>
+        <Link to={homeUrl} className="header"><h3 className="back">{'<'}</h3></Link>
         <div className="details-list">
           {populate(details)}
         </div>
