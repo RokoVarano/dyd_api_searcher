@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# D&D API Navigation Website
 
-## Available Scripts
+This is the app corresponding to the Microverse React redux capstone. It is a navigation website to display information from the D&D5e API.
+The site is designed for mobile view.
 
-In the project directory, you can run:
+## Screenshot
 
-### `yarn start`
+![screenshot](./app_screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- Redux
+- SASS
+- React Test Library
+- Jest
+- FontAwesome
 
-### `yarn test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Netlify](https://dndapiviewer.netlify.app/)
 
-### `yarn build`
+## Video Presentation
+[Loom](https://www.loom.com/share/77a26898680341bfa20b7b7610d42d8b)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+To get a local copy up and running follow these simple example steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
+- Node.js
+### Setup
+- clone the Repo: 
+### Install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- In the cloned project folder, run 'npm run start'
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Usage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- In the main page, use the input bar at the top and click on the grey eye button at the top right to filter your categories.
+Clear the input to get the full list.
+- Click on a category square to go into it's submenu.
+- In the submenu, click an item to get into the details.
+- To go to the previous page from anywhere, click on the '<' button at the top left, in the header.
+### Run tests
 
-## Learn More
+- In the terminal, write 'npm run test' and see the results.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Rodrigo Ibaceta**
 
-### Code Splitting
+- GitHub: [Rodrigo Ibaceta](https://github.com/RokoVarano/)
+- Twitter: [@Rodrigo](https://twitter.com/RodrigoIbacet11)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rodrigo-ibaceta-a8657611a/)
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Thanks to [Leigh Halliday](https://www.youtube.com/watch?v=vbvQzWDCuXU) and [Michell Ayala](https://www.youtube.com/watch?v=BpssbStj-oI) for your tutorial videos. They were very helpful!
 
-### Analyzing the Bundle Size
+Thanks to [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) for allowing me to use his theme.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions, issues, and feature requests are welcome!
 
-### Making a Progressive Web App
+Feel free to check the [issues page](https://github.com/RokoVarano/math-magicians/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Show your support
 
-### Advanced Configuration
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.

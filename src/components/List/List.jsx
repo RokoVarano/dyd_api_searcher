@@ -16,7 +16,7 @@ const List = (props) => {
     const count = category.category ? <p>{`${category.category.count} items`}</p> : null;
 
     return (
-      <li key={name} className={`list-item ${mainList ? 'main-list' : ''}`}>
+      <li key={name} className={`list-item ${mainList ? 'main-list' : 'secondary-list'}`}>
         <Switch>
           <Route exact path={path}>
             <Link to={`${address}`} key={name}>

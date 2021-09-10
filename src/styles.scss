@@ -49,11 +49,6 @@ body,
     font-family: $h-font;
     flex-direction: row;
   }
-
-  i {
-    width: auto;
-    padding-right: 1rem;
-  }
 }
 
 @import './components/Header/header.scss';

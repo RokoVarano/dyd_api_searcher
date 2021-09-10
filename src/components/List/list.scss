@@ -1,10 +1,19 @@
 .list {
-  padding: 0.5rem;
   overflow-y: auto;
   flex-wrap: wrap;
   flex-direction: row;
 
+  .list-separation {
+    border-bottom: 1px $color-white solid;
+  }
+
   .no-padding {
+    padding: 0;
+  }
+
+  .invisible {
+    width: 0;
+    height: 0;
     padding: 0;
   }
 
@@ -21,9 +30,13 @@
       left: 0;
       right: 0;
       background-color: $color-magenta;
-      opacity: 80%;
+      opacity: 0.8;
       justify-content: flex-end;
       align-items: center;
+    }
+
+    i {
+      width: auto;
     }
   }
 
@@ -47,7 +60,6 @@
     height: 48vw;
     justify-content: flex-end;
     align-items: flex-end;
-    border: 2px $color-magenta-dark solid;
 
     a {
       flex-direction: column;
@@ -63,11 +75,19 @@
     }
   }
 
-  li:nth-child(even) {
+  .secondary-list:nth-child(even) {
     background-color: $color-magenta-dark;
   }
 
-  .main-list:nth-child(n) {
+  .secondary-list:nth-child(odd) {
     background-color: $color-magenta;
+  }
+
+  .main-list:nth-child(4n+1) {
+    background-color: $color-magenta-dark;
+  }
+
+  .main-list:nth-child(4n) {
+    background-color: $color-magenta-dark;
   }
 }

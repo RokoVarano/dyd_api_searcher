@@ -38,6 +38,9 @@ function App() {
               <li className="main-picture">
                 <h1 className="pink-cover"><i className="fab fa-d-and-d fa-4x" /></h1>
               </li>
+              <li className="list-separation">
+                <h6>DnD API viewer</h6>
+              </li>
               <List categories={mainList} mainList />
             </ul>
           )}

@@ -19,6 +19,10 @@ const Header = () => {
           )}
         />
       </Switch>
+      <div className="header-icons">
+        <i className="fas fa-microphone back" />
+        <i className="fas fa-cog back" />
+      </div>
     </nav>
   );
 };
