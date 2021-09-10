@@ -35,5 +35,3 @@ it('renders each category name', () => {
   );
   getByTestId('list').childNodes.forEach((node, index) => expect(node).toHaveTextContent(capFirst(mockGetCategories()[index].key)));
 });
-
-// Credits: https://www.youtube.com/watch?v=vbvQzWDCuXU
